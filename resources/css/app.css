@@ -1,0 +1,6 @@
+strong {
+  font-weight: normal;
+}
+.no-bold strong {
+  font-weight: normal;
+}
