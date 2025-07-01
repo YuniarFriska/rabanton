@@ -9,7 +9,7 @@
                 <div class="row">
                     <div class="col-md-6">
                     <div class="form-group">
-                    <label for="">Nama Perusahaan</label>
+                    <label for="">Name of The Company</label>
                     <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" placeholder="Nama Perusahaan" value="{{ isset($about) ? $about->name : old('name') }}">
                     @error('name')
                         <div class="invalid-feedback">
@@ -39,7 +39,7 @@
                 </div>
                     <div class="col-md-6">
                     <div class="form-group">
-                        <label for="">Deskripsi</label>
+                        <label for="">Description</label>
                             <textarea name="desc" class="form-control" id="summernote" cols="30" rows="10">{{ $about->desc }}</textarea>
                             @error('desc')
                                 <div class="invalid-feedback">
@@ -50,7 +50,7 @@
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Simpan</button>
+                <button type="submit" class="btn btn-primary">Save</button>
             </form>
             </div>
         </div>
