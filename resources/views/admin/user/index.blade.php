@@ -23,7 +23,7 @@
                             <form action="/admin/user/{{ $item->id }}" method="POST">
                                 @method('delete')
                                 @csrf
-                                <button type="submit" class="btn btn-danger"><i class="fas fa-trash"></i>Hapus</button>
+                                <button type="submit" class="btn btn-danger"><i class="fas fa-trash"></i>Delete</button>
                             </form>
                             </div>
                         </td>

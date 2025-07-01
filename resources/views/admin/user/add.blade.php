@@ -42,7 +42,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="">Konfirmasi Password</label>
+                    <label for="">Confirmation Password</label>
                     <input type="password" name="re_password" class="form-control @error('re_password') is-invalid @enderror" placeholder="Password">
                     @error('re_password')
                         <div class="invalid-feedback">
@@ -51,7 +51,7 @@
                     @enderror
                 </div>
 
-                <button type="submit" class="btn btn-primary">Simpan</button>
+                <button type="submit" class="btn btn-primary">Save</button>
             </form>
             </div>
         </div>
