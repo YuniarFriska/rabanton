@@ -16,88 +16,51 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
-<body style="background-color: #666666;">
-	
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
+<body style="background-color: #f3f4f6; display: flex; align-items: center; justify-content: center; min-height: 100vh;">
 
-				<form class="login100-form validate-form" action="/login/do" method="POST">
-					@csrf
-					<span class="login100-form-title p-b-43">
-						Login to continue
-					</span>
-					
-					<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email">
-						<span class="focus-input100"></span>
-						<span class="label-input100">Email</span>
-					</div>
-					
-					<div class="wrap-input100 validate-input" data-validate="Password is required">
-						<input class="input100" type="password" name="password">
-						<span class="focus-input100"></span>
-						<span class="label-input100">Password</span>
-					</div>
+  <div class="card shadow-lg rounded-3 overflow-hidden p-5" style="width: 100%; max-width: 400px; background-color: #ffffff;">
 
-					<div class="flex-sb-m w-full p-t-3 p-b-32">
-						<div class="contact100-form-checkbox">
-							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-							<label class="label-checkbox100" for="ckb1">
-								Remember me
-							</label>
-						</div>
+    <!-- Logo -->
+    <div class="text-center mb-4">
+      <img src="{{ asset('images/logoyufa.png') }}" alt="Yufa Logo" style="height: 50px;">
+    </div>
 
-						<div>
-							<a href="#" class="txt1">
-								Forgot Password?
-							</a>
-						</div>
-					</div>
+    <!-- Form Login -->
+    <form action="/login/do" method="POST">
+      @csrf
 
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" style="background-color: red; color: white;">
-							Login
-						</button>
-					</div>
+      <h5 class="text-center mb-4 font-weight-bold">Login Administration</h5>
 
-					<!-- Pesan Error Diletakkan di Bawah Tombol Login -->
-					@if(session()->has('loginError'))
-						<small class="text-danger" style="display: block; margin-top: 10px; text-align: center;">
-							{{ session('loginError') }}
-						</small>
-					@endif
-					
-					<!-- <div class="text-center p-t-46 p-b-20">
-						<span class="txt2">
-							or sign up using
-						</span>
-					</div> -->
+      <div class="form-group">
+        <label>Email</label>
+        <input class="form-control" type="text" name="email" required>
+      </div>
 
-					<!-- <div class="login100-form-social flex-c-m">
-						<a href="#" class="login100-form-social-item flex-c-m bg1 m-r-5">
-							<i class="fa fa-facebook-f" aria-hidden="true"></i>
-						</a>
+      <div class="form-group mt-3">
+        <label>Password</label>
+        <input class="form-control" type="password" name="password" required>
+      </div>
 
-						<a href="#" class="login100-form-social-item flex-c-m bg2 m-r-5">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</a>
-					</div> -->
-				</form>
+      <div class="d-flex justify-content-between align-items-center mt-3">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="remember-me" id="remember">
+          <label class="form-check-label" for="remember">
+            Remember me
+          </label>
+        </div>
+        <a href="#" class="text-muted small">Forgot Password?</a>
+      </div>
 
-				<div class="login100-more" style="background-image: url('images/bg-02.png');"></div>
-			</div>
-		</div>
-	</div>
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-	<script src="vendor/animsition/js/animsition.min.js"></script>
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-	<script src="vendor/select2/select2.min.js"></script>
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-	<script src="js/main.js"></script>
+      <button type="submit" class="btn btn-danger w-100 mt-4">Login</button>
+
+      @if(session()->has('loginError'))
+        <div class="alert alert-danger mt-3 text-center p-2">
+          {{ session('loginError') }}
+        </div>
+      @endif
+    </form>
+  </div>
 
 </body>
+
 </html>
