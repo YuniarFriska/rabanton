@@ -121,9 +121,22 @@
           @foreach ($service as $item)
             <div class="col-lg-4 col-md-6">
               <div class="service-item">
-              <div class="icon">
+              <!-- <div class="icon">
                 <i class="{{ $item->icon }} fa-3x" aria-hidden="true"></i>
-              </div>
+              </div> -->
+              <div class="icon mb-4" style="
+               width: 150px;
+               height: 150px;
+               background-color: #dc3545;
+               border-radius: 50%;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               margin: 0 auto 20px auto;
+               color: white;
+               ">
+               <i class="{{ $item->icon }}" style="font-size: 60px;"></i>
+               </div>
                 <div class="main-content">
                   <h4>{{ $item->title }}</h4>
                   <p>{{ $item->desc }}</p>
