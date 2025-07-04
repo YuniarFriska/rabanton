@@ -282,29 +282,27 @@
   </div>
 </div>
 
-  <div class="section testimonials">
+ <div class="section testimonials py-16 bg-gray-50">
     <div class="container">
         <div class="row">
-            <!-- Bagian Berita di Kotak Ungu -->
+            <!-- Bagian Carousel Berita -->
             <div class="col-lg-7">
                 <div class="owl-carousel owl-testimonials">
                     @foreach ($news as $item)
-                        <div class="item" style="background-color: #ac1a1a; border-radius: 8px; overflow: hidden;">
-                            <!-- Gambar Full -->
-                            <div class="image" style="width: 100%; height: 250px; overflow: hidden;">
+                        <div class="item bg-red-700 text-white rounded-lg overflow-hidden shadow-md">
+                            <!-- Gambar -->
+                            <div class="image" style="height: 250px; overflow: hidden;">
                                 <img src="{{ asset($item->cover) }}" alt="{{ $item->title }}" style="width: 100%; height: 100%; object-fit: cover;">
                             </div>
-                            <!-- Konten Berita -->
-                              <div class="content" style="padding: 20px;">
-                                <h4 style="margin-bottom: 10px;">
-      
-                                      <a href="{{ route('news.detail', $item->id) }}">{{ $item->title }}</a>
-                                        
+                            <!-- Konten -->
+                            <div class="content p-4">
+                                <h4 class="text-xl font-semibold mb-2 text-white hover:underline">
+                                    <a href="{{ route('news.detail', $item->id) }}" class="text-white">{{ $item->title }}</a>
                                 </h4>
-                                <p style="color: #f1f1f1; margin-bottom: 10px;">
+                                <p class="text-gray-200 text-sm mb-3">
                                     {{ Str::limit(strip_tags($item->body), 150, '...') }}
                                 </p>
-                                <p style="color: #ddd; font-size: 14px;">
+                                <p class="text-gray-300 text-xs">
                                     {{ \Carbon\Carbon::parse($item->created_at)->format('F d, Y') }}
                                 </p>
                             </div>
@@ -312,18 +310,21 @@
                     @endforeach
                 </div>
             </div>
-            <!-- Bagian Judul dan Deskripsi -->
+
+            <!-- Bagian Judul & Deskripsi -->
             <div class="col-lg-5 align-self-center">
                 <div class="section-heading">
-                    <h6>NEWS</h6>
-                    <h2>What’s Happening Around Us?</h2>
-                    <p>Welcome to Pumma Technology Co., Ltd.! Dive into our exciting press releases for the latest news and updates. We’re here to answer your questions, so feel free to reach out!</p>
-                    
+                    <h6 class="text-red-600 text-sm font-semibold uppercase">NEWS</h6>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">What’s Happening Around Us?</h2>
+                    <p class="text-gray-600">
+                        Welcome to Pumma Technology Co., Ltd.! Dive into our exciting press releases for the latest news and updates. We’re here to answer your questions, so feel free to reach out!
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 
   <div class="contact-us section" id="contact">
     <div class="container">
