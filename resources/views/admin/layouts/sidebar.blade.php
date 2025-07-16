@@ -22,7 +22,7 @@
                 <li class="nav-item">
                     <a href="/admin/massage" class="nav-link {{ Request::is('admin/massage*') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-envelope"></i>
-                        <p>Massage</p>
+                        <p>Message</p>
                     </a>
                 </li>
 

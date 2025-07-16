@@ -15,10 +15,10 @@
       <span class="info-box-icon bg-info elevation-1"><i class="fas fa-cog"></i></span>
 
       <div class="info-box-content">
-        <span class="info-box-text">Pesan</span>
+        <span class="info-box-text">Message</span>
         <span class="info-box-number">
           {{ $pesan }}
-          <small>Pesan</small>
+          <small>Message</small>
         </span>
       </div>
       <!-- /.info-box-content -->
