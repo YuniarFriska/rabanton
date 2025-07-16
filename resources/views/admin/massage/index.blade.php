@@ -8,7 +8,7 @@
                     <tr>
                         <td width="100px">#</td>
                         <td width="250px">Name</td>
-                        <td>Massage</td>
+                        <td>Message</td>
                         <td>Your Email</td>
                         <td>Action</td>
                     </tr>
