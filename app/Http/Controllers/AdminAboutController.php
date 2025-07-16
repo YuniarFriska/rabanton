@@ -12,7 +12,7 @@ class AdminAboutController extends Controller
     public function index()
     {
         $data = [
-            'title' => 'Manage About Page',
+            'title' => 'About Us Management',
             'about' => About::first(),
             'content' => 'admin/about/index'     
         ];
