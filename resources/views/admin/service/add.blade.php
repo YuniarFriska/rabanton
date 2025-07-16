@@ -23,7 +23,7 @@
                 <div class="form-group">
                     <label for="">Icon</label>
                     <input type="text" name="icon" class="form-control @error('icon') is-invalid @enderror" placeholder="Icon" value="{{ $service->icon ?? old('icon') }}">
-                    <a href="https://fontawesome.com/v4/icons/" target="blank">Klik Untuk Mencari Icon</a>
+                    <a href="https://fontawesome.com/v4/icons/" target="blank">Click to search icon</a>
                     @error('icon')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -32,7 +32,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="">Deskripsi</label>
+                    <label for="">Description</label>
                     <textarea name="desc" class="form-control" id="" cols="30" rows="10">{{ $service->desc ?? old('desc') }}</textarea>
                     @error('desc')
                         <div class="invalid-feedback">
@@ -41,7 +41,7 @@
                     @enderror
                 </div>
 
-                <button type="submit" class="btn btn-primary">Simpan</button>
+                <button type="submit" class="btn btn-primary">Save</button>
             </form>
             </div>
         </div>
