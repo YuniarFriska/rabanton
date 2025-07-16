@@ -17,7 +17,7 @@ class AdminUserController extends Controller
     public function index()
     {
         $data = [
-            'title' => 'Manajemen User',
+            'title' => 'User Management',
             'user' => User::get(),
             'content' => 'admin/user/index'     
         ];
@@ -32,7 +32,7 @@ class AdminUserController extends Controller
     public function create()
     {
         $data = [
-            'title' => 'Tambah User',
+            'title' => 'Add User',
             'content' => 'admin/user/add'     
         ];
         return view('admin.layouts.wrapper', $data);
@@ -56,7 +56,7 @@ class AdminUserController extends Controller
         $data['password'] = Hash::make($data['password']);
 
         User::create($data);
-        Alert::success('Sukses', 'Data berhasil ditambahkan');
+        Alert::success('Success', 'Data added successfully');
         return redirect('/admin/user');
     }
 
@@ -111,7 +111,7 @@ class AdminUserController extends Controller
             $data['password'] = $user->password;
         }
         $user->update($data);
-        Alert::success('Sukses', 'Data berhasil diupdate');
+        Alert::success('Success', 'Data updated successfully ');
         return redirect('/admin/user');
     }
 

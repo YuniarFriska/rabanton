@@ -25,7 +25,7 @@ class HomeContactController extends Controller
         ]);
 
         Pesan::create($data);
-        Alert::success('Sukses', 'Pesan Berhasil Dikirim');
+        Alert::success('Success', 'Message send successfully');
         return redirect('/');
     }
 }

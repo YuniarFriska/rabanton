@@ -17,7 +17,7 @@ class AdminSliderController extends Controller
     public function index()
     {
         $data = [
-            'title' => 'Manajemen Slider',
+            'title' => 'Slider Management',
             'slider' => Slider::get(),
             'content' => 'admin/slider/index'     
         ];
@@ -32,7 +32,7 @@ class AdminSliderController extends Controller
     public function create()
     {
         $data = [
-            'title' => 'Tambah Slider',
+            'title' => 'Add Slider',
             'content' => 'admin/slider/add'     
         ];
         return view('admin.layouts.wrapper', $data);
@@ -65,7 +65,7 @@ class AdminSliderController extends Controller
         }
 
         Slider::create($data);
-        Alert::success('Sukses', 'Data berhasil ditambahkan');
+        Alert::success('Success', 'Data added successfully');
         return redirect('/admin/slider');
     }
 
@@ -130,7 +130,7 @@ class AdminSliderController extends Controller
         }
 
         $slider->update($data);
-        Alert::success('Sukses', 'Data berhasil diupdate');
+        Alert::success('Success', 'Data updated successfully');
         return redirect('/admin/slider');
     }
 
@@ -149,7 +149,7 @@ class AdminSliderController extends Controller
         }
         
         $slider->delete();
-        Alert::success('Sukses', 'Data berhasil dihapus');
+        Alert::success('Success', 'Data deteled successfully');
         return redirect('/admin/slider');
     }
 }
