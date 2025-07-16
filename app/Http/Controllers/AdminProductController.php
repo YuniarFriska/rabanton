@@ -16,7 +16,7 @@ class AdminProductController extends Controller
     public function index()
     {
         $data = [
-            'title' => 'Manage Products',
+            'title' => 'Product Management',
             'products' => Product::get(),
             'content' => 'admin/product/index',
         ];

@@ -17,7 +17,7 @@ class AdminPesanController extends Controller
     {
         //
         $data = [
-            'title' => 'Manajemen Massage',
+            'title' => 'Message Management',
             'pesan' => Pesan::orderBy('created_at', 'desc')->get(),
             'content' => 'admin/massage/index'     
         ];
@@ -58,7 +58,7 @@ class AdminPesanController extends Controller
         $pesan->save();
 
         $data = [
-            'title' => 'Manajemen Massage',
+            'title' => 'Message Management',
             'pesan' => $pesan,
             'content' => 'admin/massage/show'     
         ];
@@ -99,7 +99,7 @@ class AdminPesanController extends Controller
         $pesan = Pesan::find($id);
 
         $pesan->delete();
-        FacadesAlert::success('Sukses', 'Data berhasil dihapus');
+        FacadesAlert::success('Success', 'Data deleted successfully');
         return redirect('/admin/massage');
     }
 }

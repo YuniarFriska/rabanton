@@ -17,7 +17,7 @@ class AdminServiceController extends Controller
     public function index()
     {
         $data = [
-            'title' => 'Manajemen Service',
+            'title' => 'Service Management',
             'service' => Service::get(),
             'content' => 'admin/service/index'     
         ];
@@ -32,7 +32,7 @@ class AdminServiceController extends Controller
     public function create()
     {
         $data = [
-            'title' => 'Tambah Service',
+            'title' => 'Add Service',
             'content' => 'admin/service/add'     
         ];
         return view('admin.layouts.wrapper', $data);
@@ -53,7 +53,7 @@ class AdminServiceController extends Controller
         ]);
 
         Service::create($data);
-        Alert::success('Sukses', 'Data berhasil ditambahkan');
+        Alert::success('Success', 'Data added successfully');
         return redirect('/admin/service');
     }
 
@@ -101,7 +101,7 @@ class AdminServiceController extends Controller
         ]);
 
         $service->update($data);
-        Alert::success('Sukses', 'Data berhasil diupdate');
+        Alert::success('Success', 'Data update successfully');
         return redirect('/admin/service');
     }
 
@@ -115,7 +115,7 @@ class AdminServiceController extends Controller
     {
         $service = Service::find($id);
         $service->delete();
-        Alert::success('Sukses', 'Data berhasil dihapus');
+        Alert::success('Succes, Data deleted succesfully');
         return redirect('/admin/service');
     }
 }
