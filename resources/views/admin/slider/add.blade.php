@@ -22,7 +22,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="">Deskripsi</label>
+                    <label for="">Description</label>
                     <input type="text" name="desc" class="form-control @error('desc') is-invalid @enderror" placeholder="Deskripsi" value="{{ isset($slider) ? $slider->desc : old('desc') }}">
                     @error('desc')
                         <div class="invalid-feedback">
@@ -32,7 +32,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="">Gambar</label>
+                    <label for="">Picture</label>
                     <input type="file" name="gambar" class="form-control @error('gambar') is-invalid @enderror" placeholder="Password" value="{{ old('gambar') }}">
                     
                     
@@ -48,7 +48,7 @@
 
                 </div>
 
-                <button type="submit" class="btn btn-primary">Simpan</button>
+                <button type="submit" class="btn btn-primary">Save</button>
             </form>
             </div>
         </div>
