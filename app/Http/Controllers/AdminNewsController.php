@@ -11,7 +11,7 @@ class AdminNewsController extends Controller
     public function index()
     {
         $data = [
-            'title' => 'Manage News',
+            'title' => 'News Management',
             'news' => News::all(),
             'content' => 'admin/news/index'
         ];
