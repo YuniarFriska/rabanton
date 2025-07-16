@@ -11,7 +11,7 @@ class AdminNewsController extends Controller
     public function index()
     {
         $data = [
-            'title' => 'Manajemen Berita',
+            'title' => 'Manage News',
             'news' => News::all(),
             'content' => 'admin/news/index'
         ];
@@ -21,7 +21,7 @@ class AdminNewsController extends Controller
     public function create()
     {
         $data = [
-            'title' => 'Tambah Berita',
+            'title' => 'Add News',
             'content' => 'admin/news/add'
         ];
         return view('admin.layouts.wrapper', $data);
@@ -45,7 +45,7 @@ class AdminNewsController extends Controller
         }
 
         News::create($data);
-        Alert::success('Sukses', 'Berita berhasil ditambahkan');
+        Alert::success('Success', 'News added successfully');
         return redirect('/admin/news');
     }
 
@@ -62,7 +62,7 @@ class AdminNewsController extends Controller
     public function edit($id)
     {
         $data = [
-            'title' => 'Edit Berita',
+            'title' => 'Edit News',
             'news' => News::findOrFail($id),
             'content' => 'admin/news/add'
         ];
@@ -91,7 +91,7 @@ class AdminNewsController extends Controller
         }
 
         $news->update($data);
-        Alert::success('Sukses', 'Berita berhasil diperbarui');
+        Alert::success('Success', 'News added successfully');
         return redirect('/admin/news');
     }
 
@@ -104,7 +104,7 @@ class AdminNewsController extends Controller
         }
 
         $news->delete();
-        Alert::success('Sukses', 'Berita berhasil dihapus');
+        Alert::success('Success', 'News deleted successfully');
         return redirect('/admin/news');
     }
 }

@@ -16,7 +16,7 @@ class AdminHighlightController extends Controller
     public function index()
     {
         $data = [
-            'title' => 'Manage Highlights',
+            'title' => 'Manage Highlights Page',
             'highlights' => Highlight::get(),
             'content' => 'admin/highlight/index',
         ];
