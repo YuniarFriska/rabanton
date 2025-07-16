@@ -12,7 +12,7 @@ class AdminAboutController extends Controller
     public function index()
     {
         $data = [
-            'title' => 'Manajemen About',
+            'title' => 'Manage About Page',
             'about' => About::first(),
             'content' => 'admin/about/index'     
         ];
@@ -46,7 +46,7 @@ class AdminAboutController extends Controller
         }
 
         $about->update($data);
-        Alert::success('Sukses', 'Data berhasil diupdate');
+        Alert::success('Succsess', 'Data updated successfully');
         return redirect('/admin/about');
     }
 }
