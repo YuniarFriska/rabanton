@@ -5,7 +5,7 @@
                 <a href="/admin/service/create" class="btn btn-primary mb-3"><i class="fas fa-plus"></i>Add</a>
                 <table class="table">
                     <tr>
-                        <td>No</td>
+                        <td>No.</td>
                         <td>Title</td>
                         <td>Icon</td>
                         <td>Action</td>
