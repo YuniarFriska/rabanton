@@ -29,7 +29,7 @@ class AdminAuthController extends Controller
             return redirect('/admin/dashboard');
         }
 
-        return back()->with('loginError', 'Gagal Login, Email atau Password Tidak Ditemukan');
+        return back()->with('loginError', 'Login Failed, Email or Password Not Found');
     }
 
     function logout()
