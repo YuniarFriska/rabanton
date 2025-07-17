@@ -3,7 +3,7 @@
   <div class="col-md-12">
     <div class="card">
       <div class="card-body bg-primary">
-      Welcome to {{ auth()->user()->name }} Admin Panel
+      Hi, {{ auth()->user()->name }} Welcome to Admin Panel!
       </div>
     </div>
   </div>
