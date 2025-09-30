@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Yufa </title>
+    <title>Rabanton Maju Joyo Abadi </title>
 
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -42,21 +42,21 @@
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                      <a href="{{ url('/') }}" class="logo">
-    <img src="{{ asset('images/logoyufa.png') }}" alt="Yufa Logo" style="height: 50px;">
+    <img src="{{ asset('images/icon.jpg') }}" alt="Yufa Logo" style="height: 50px;">
 </a> 
                      <!-- <a href="index.html" class="logo">
                         <h1>Yufa Tech Co., Ltd.</h1>
                     </a> 
                      -->
                     <ul class="nav">
-                      <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                      <li class="scroll-to-section"><a href="#services">Services</a></li>
-                      <li class="scroll-to-section"><a href="#courses">Product</a></li>
+                      <li class="scroll-to-section"><a href="#top" class="active">Beranda</a></li>
+                      <li class="scroll-to-section"><a href="#services">Layanan</a></li>
+                      <li class="scroll-to-section"><a href="#courses">Produk</a></li>
                       <li class="scroll-to-section"><a href="#team">Highlight</a></li>
                       @auth 
                       <li class="scroll-to-section"><a href="/admin/dashboard">Dashboard</a></li>
                       @else
-                      <li class="scroll-to-section"><a href="/login">Login</a></li>
+                      <li class="scroll-to-section"><a href="/login">Masuk</a></li>
                       @endauth 
                   </ul>   
                     <a class='menu-trigger'>
@@ -127,7 +127,7 @@
               <div class="icon mb-4" style="
                width: 150px;
                height: 150px;
-               background-color: #dc3545;
+               background-color: #0056b3;
                border-radius: 50%;
                display: flex;
                align-items: center;
@@ -141,7 +141,7 @@
                   <h4>{{ $item->title }}</h4>
                   <p>{{ $item->desc }}</p>
                   <div class="main-button">
-                    <a href="#">Our Services</a>
+                    <a href="#">Layanan Kami</a>
                   </div>
                 </div>
               </div>
@@ -158,48 +158,48 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Vision
+                  Visi
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  Yufa Tech aims to be the global leader in advanced shoe manufacturing technology. Through continuous innovation and seamless IoT integration, we strive to revolutionize the industry, making production smarter, more efficient, and environmentally friendly.
+                  Menjadi perusahaan terdepan dalam pembangunan dan produksi beton pracetak yang inovatif, berkualitas, dan terjangkau, dengan mengedepankan kepuasan pelanggan serta keberlanjutan lingkungan.
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Mission
+                  Misi
                 </button>
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  We are committed to pushing the boundaries of shoe manufacturing by developing cutting edge machinery that ensures precision, reliability, and sustainability. Our goal is to empower footwear manufacturers with high performance solutions, enabling them to enhance productivity, reduce waste, and achieve excellence in every step of the production process.
+                  Berkomitmen pada inovasi berkelanjutan yang ramah lingkungan dan mendukung pembangunan berkelanjutan.
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Sustainable Innovation
+                  Inovasi Berkelanjutan
                 </button>
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  We prioritize eco friendly manufacturing by integrating energy efficient systems and reducing material waste. Our technology is designed to meet the demands of modern production while minimizing environmental impact.
+                  Kami percaya bahwa pembangunan yang baik harus sejalan dengan keberlanjutan. Dengan mengadopsi teknologi ramah lingkungan, efisiensi penggunaan bahan baku, serta inovasi dalam desain dan produksi beton pracetak, kami berkomitmen untuk menghadirkan solusi konstruksi yang tidak hanya kuat dan tahan lama, tetapi juga mendukung pelestarian lingkungan untuk generasi mendatang.
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  Industry Expertise & Experience
+                  Keahlian & Pengalaman Industri
                 </button>
               </h2>
               <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  With the support of the YuMing Group, Yufa Tech brings decades of expertise in footwear manufacturing technology. Our deep industry knowledge allows us to provide the most effective solutions tailored to our clients’ needs.
+                  Dengan pengalaman bertahun-tahun dalam industri percetakan beton, kami memahami secara mendalam kebutuhan pasar konstruksi. Didukung oleh mesin berteknologi modern, tenaga kerja profesional, serta pengawasan mutu yang ketat, kami memiliki keahlian industri yang mumpuni untuk menghadirkan produk unggul, tepat waktu, dan sesuai standar terbaik di bidangnya.
                 </div>
               </div>
             </div>
@@ -207,8 +207,8 @@
         </div>
         <div class="col-lg-5 align-self-center">
         <div class="section-heading">
-          <h6>About Us</h6>
-              <h2>Yufa Tech: Innovating Shoe Manufacturing Solutions</h2>
+          <h6>Tentang Kami</h6>
+              <h2>Rabanton: Inovasi Solusi Beton Pracetak</h2>
               <img src="/{{ $about->cover }}" alt="About Us Image" style="width: 100%; max-width: 500px; margin: 20px 0;">
               <p style="margin-bottom: 10px;">{{$about->desc}}</p>
           </div>
@@ -222,16 +222,16 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <div class="section-heading">
-                    <h6>Latest Products</h6>
-                    <h2>Our Latest Products</h2>
+                    <h6>Produk Unggulan</h6>
+                    <h2>Produk Terbaru Kami</h2>
                 </div>
             </div>
         </div>
-        <ul class="event_filter">
+        <!-- <ul class="event_filter">
             <li>
-                <a class="is_active" href="#!" data-filter="*">List of Products</a>
+                <a class="is_active" href="#!" data-filter="*">List dari Produk:</a>
             </li>
-        </ul>
+        </ul>-->
         <div class="row event_box">
             @foreach ($products as $product)
                 <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer">
@@ -289,7 +289,7 @@
             <div class="col-lg-7">
                 <div class="owl-carousel owl-testimonials">
                     @foreach ($news as $item)
-                        <div class="item bg-red-700 text-white rounded-lg overflow-hidden shadow-md">
+                        <div class="item bg-blue-700 text-white rounded-lg overflow-hidden shadow-md">
                             <!-- Gambar -->
                             <div class="image" style="height: 250px; overflow: hidden;">
                                 <img src="{{ asset($item->cover) }}" alt="{{ $item->title }}" style="width: 100%; height: 100%; object-fit: cover;">
