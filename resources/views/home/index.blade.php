@@ -42,7 +42,7 @@
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                      <a href="{{ url('/') }}" class="logo">
-    <img src="{{ asset('images/icon.jpg') }}" alt="Yufa Logo" style="height: 50px;">
+    <img src="{{ asset('images/friscoy.jpg') }}" alt="Yufa Logo" style="height: 50px;">
 </a> 
                      <!-- <a href="index.html" class="logo">
                         <h1>Yufa Tech Co., Ltd.</h1>
@@ -314,10 +314,10 @@
             <!-- Bagian Judul & Deskripsi -->
             <div class="col-lg-5 align-self-center">
                 <div class="section-heading">
-                    <h6 class="text-red-600 text-sm font-semibold uppercase">NEWS</h6>
-                    <h2 class="text-3xl font-bold text-gray-800 mb-4">What’s Happening Around Us?</h2>
+                    <h6 class="text-red-600 text-sm font-semibold uppercase">BERITA</h6>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Apa Yang Terjadi di Perusahaan Kami?</h2>
                     <p class="text-gray-600">
-                        Welcome to Pumma Technology Co., Ltd.! Dive into our exciting press releases for the latest news and updates. We’re here to answer your questions, so feel free to reach out!
+                        Temukan berbagai informasi terbaru seputar proyek dan inovasi kami melalui rilis berita yang menarik. Kami selalu siap menjawab pertanyaan Anda, jadi jangan ragu untuk menghubungi kami!
                     </p>
                 </div>
             </div>
