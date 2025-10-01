@@ -54,7 +54,7 @@
                       <li class="scroll-to-section"><a href="#courses">Produk</a></li>
                       <li class="scroll-to-section"><a href="#team">Highlight</a></li>
                       @auth 
-                      <li class="scroll-to-section"><a href="/admin/dashboard">Dashboard</a></li>
+                      <li class="scroll-to-section"><a href="/admin/dashboard">Admin</a></li>
                       @else
                       <li class="scroll-to-section"><a href="/login">Masuk</a></li>
                       @endauth 
@@ -99,7 +99,7 @@
                                     <!-- <a href="#about" class="bg-yellow-500 hover:bg-yellow-600 text-white px-5 py-2 rounded-lg font-semibold transition-all duration-300 shadow-md">
                                         Get to Know Us
                                     </a> -->
-                                    <a href="https://youtube.com/@mingyu8584?si=ylIB2Vnxomvwp8-D" target="_blank" class="flex items-center gap-2 text-white border border-white hover:bg-white hover:text-red-600 px-4 py-2 rounded-lg transition duration-300">
+                                    <a href="https://youtube.com/@RabantonFranchise" target="_blank" class="flex items-center gap-2 text-white border border-white hover:bg-white hover:text-red-600 px-4 py-2 rounded-lg transition duration-300">
                                         <i class="fa fa-play"></i> Our Youtube
                                     </a>
                                 </div>
@@ -127,7 +127,7 @@
               <div class="icon mb-4" style="
                width: 150px;
                height: 150px;
-               background-color: #0056b3;
+               background-color: #000000;
                border-radius: 50%;
                display: flex;
                align-items: center;
