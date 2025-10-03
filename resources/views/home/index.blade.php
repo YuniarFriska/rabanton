@@ -331,15 +331,16 @@
       <div class="row">
         <div class="col-lg-6  align-self-center">
           <div class="section-heading">
-            <h6>Contact Us</h6>
-            <h2>Feel free to reach out to us anytime, we're here to help.</h2>
+            <h6>Hubungi Kami</h6>
+            <h2>Bisa kontak kami kapanpun itu, kami siap untuk membantu.</h2>
             <!-- <p>Our team is ready to assist with any inquiries, product information, or service requests.<br><br> -->
-             <p class="no-bold"> <strong>Telephone: </strong> +886 4 2335-7502/3<br>
-             <strong>Fax: </strong> +886 4 2335-8850 <br>
-             <strong>Address:</strong> No.19, Alley 50, Lane 260, Sec. 8, Huanjhong Rd., Wurih Area, Taichung County 41465, Taiwan<br>
-             <strong>General Email:</strong> <a href="mailto:tony@pumma.com.tw">tony@pumma.com.tw</a><br>
-             <strong>AGV & Automation Inquiries:</strong> <a href="mailto:sales5@newyuming.com.tw">sales5@newyuming.com.tw</a>
-          </p>
+             <p class="no-bold"> <strong>Telefon </strong>(0333) – 511 333<br>
+             <strong>Email:</strong> <a href="mailto:rabantonmja@gmail.com">rabantonmja@gmail.com</a><br>
+             <strong>Instagram: </strong> rabanton_mja <br>
+             <strong>Alamat:</strong> JL. Raya Situbondo – Banyuwangi No. 77, Ketapang, Banyuwangi<br>
+             
+             <!-- <strong>AGV & Automation Inquiries:</strong> <a href="mailto:sales5@newyuming.com.tw">sales5@newyuming.com.tw</a>
+          </p>-->
             <!-- <div class="special-offer">
               <span class="offer">Send<br><em>US</em></span>
               <h6>Yufa Technology</em></h6>
@@ -356,22 +357,22 @@
               <div class="row">
                 <div class="col-lg-12">
                   <fieldset>
-                    <input type="name" class="form-control @error('name') is-invalid @enderror" name="name" id="name" placeholder="Your Name..." autocomplete="on" required>
+                    <input type="name" class="form-control @error('name') is-invalid @enderror" name="name" id="name" placeholder="Nama anda..." autocomplete="on" required>
                   </fieldset>
                 </div>
                 <div class="col-lg-12">
                   <fieldset>
-                    <textarea name="desc" class="form-control @error('desc') is-invalid @enderror" id="message" placeholder="Your Message" required></textarea>
+                    <textarea name="desc" class="form-control @error('desc') is-invalid @enderror" id="message" placeholder="Pesan anda..." required></textarea>
                   </fieldset>
                 </div>
                 <div class="col-lg-12">
                   <fieldset>
-                    <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" id="email" placeholder="Your email..." autocomplete="on" required>
+                    <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" id="email" placeholder="Email anda..." autocomplete="on" required>
                   </fieldset>
                 </div>
                 <div class="col-lg-12">
                   <fieldset>
-                    <button type="submit" id="form-submit" class="orange-button">Send Message Now</button>
+                    <button type="submit" id="form-submit" class="orange-button">Kirim Pesan Sekarang</button>
                   </fieldset>
                 </div>
               </div>
@@ -385,7 +386,7 @@
   <footer>
     <div class="container">
       <div class="col-lg-12">
-        <p>Copyright © 2025 Yufa Technology. All rights reserved.</a></p>
+        <p>Copyright © 2025 PT Rabanton Maju Joyo Abadi. All rights reserved.</a></p>
       </div>
     </div>
   </footer>
