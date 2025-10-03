@@ -172,7 +172,7 @@ body {
 }
 
 .main-button a:hover {
-  background-color: #b31f1f;
+  background-color: #000000;
   color: #fff;
 }
 
@@ -249,7 +249,7 @@ Pre-loader Style
   height: 16px;
   top: 12px;
   left: 15px;
-  background: #b31f1f;
+  background: #fff;
   border-radius: 50%;
   -webkit-transform: translateX(0);
   transform: translateX(0);
@@ -272,7 +272,7 @@ Pre-loader Style
   width: 16px;
   height: 16px;
   margin-left: 16px;
-  background: #b31f1f;
+  background: #fff;
   border-radius: 50%;
 }
 
@@ -743,7 +743,7 @@ Banner Style
 }
 
 .main-banner .item .buttons .icon-button i {
-  color: #b31f1f;
+  color: #000000;
   background-color: #fff;
   display: inline-block;
   height: 50px;
@@ -879,7 +879,7 @@ About Style
 .accordion {
   margin-top: -40px;
   margin-bottom: -40px;
-  background-color: #b31f1f;
+  background-color: #000000;
   border-radius: 40px;
   padding: 80px 50px 50px 50px;
 }
