@@ -7,10 +7,10 @@
                    
                     <tr>
                         <td width="100px">#</td>
-                        <td width="250px">Name</td>
-                        <td>Message</td>
-                        <td>Your Email</td>
-                        <td>Action</td>
+                        <td width="250px">Nama</td>
+                        <td>Pesan Masuk</td>
+                        <td>Email</td>
+                        <td>Aksi</td>
                     </tr>
 
                     @foreach ($pesan as $item)

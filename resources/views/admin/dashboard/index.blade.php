@@ -3,7 +3,7 @@
   <div class="col-md-12">
     <div class="card">
       <div class="card-body bg-primary">
-      Hi, {{ auth()->user()->name }} Welcome to Admin Panel!
+      Halo, {{ auth()->user()->name }} Selamat datang di Administrasi!
       </div>
     </div>
   </div>
@@ -15,10 +15,10 @@
       <span class="info-box-icon bg-info elevation-1"><i class="fas fa-cog"></i></span>
 
       <div class="info-box-content">
-        <span class="info-box-text">Message</span>
+        <span class="info-box-text">Pesan Masuk</span>
         <span class="info-box-number">
           {{ $pesan }}
-          <small>Message</small>
+          <small>Pesan Masuk</small>
         </span>
       </div>
       <!-- /.info-box-content -->
@@ -31,10 +31,10 @@
       <span class="info-box-icon bg-info elevation-1"><i class="fas fa-file"></i></span>
 
       <div class="info-box-content">
-        <span class="info-box-text">News</span>
+        <span class="info-box-text">Berita</span>
         <span class="info-box-number">
           {{ $news }}
-          <small>News</small>
+          <small>Berita</small>
         </span>
       </div>
       <!-- /.info-box-content -->
@@ -47,10 +47,10 @@
       <span class="info-box-icon bg-info elevation-1"><i class="fas fa-list"></i></span>
 
       <div class="info-box-content">
-        <span class="info-box-text">Services</span>
+        <span class="info-box-text">Layanan</span>
         <span class="info-box-number">
           {{ $service }}
-          <small>Services</small>
+          <small>Layanan</small>
         </span>
       </div>
       <!-- /.info-box-content -->
@@ -63,10 +63,10 @@
       <span class="info-box-icon bg-info elevation-1"><i class="fas fa-user"></i></span>
 
       <div class="info-box-content">
-        <span class="info-box-text">User</span>
+        <span class="info-box-text">Pengguna</span>
         <span class="info-box-number">
           {{ $user }}
-          <small>User</small>
+          <small>Pengguna</small>
         </span>
       </div>
       <!-- /.info-box-content -->
