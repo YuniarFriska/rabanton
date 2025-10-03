@@ -22,14 +22,14 @@
 
     <!-- Logo -->
     <div class="text-center mb-4">
-      <img src="{{ asset('images/logoyufa.png') }}" alt="Yufa Logo" style="height: 50px;">
+      <img src="{{ asset('images/friscoy.jpg') }}" alt="Yufa Logo" style="height: 50px;">
     </div>
 
     <!-- Form Login -->
     <form action="/login/do" method="POST">
       @csrf
 
-      <h5 class="text-center mb-4 font-weight-bold">Login Administration</h5>
+      <h5 class="text-center mb-4 font-weight-bold">Masuk Admin</h5>
 
       <div class="form-group">
         <label>Email</label>
@@ -37,7 +37,7 @@
       </div>
 
       <div class="form-group mt-3">
-        <label>Password</label>
+        <label>Kata Sandi</label>
         <input class="form-control" type="password" name="password" required>
       </div>
 
@@ -45,13 +45,13 @@
         <div class="form-check">
           <input class="form-check-input" type="checkbox" name="remember-me" id="remember">
           <label class="form-check-label" for="remember">
-            Remember me
+            Ingat Saya
           </label>
         </div>
-        <a href="#" class="text-muted small">Forgot Password?</a>
+        <a href="#" class="text-muted small">Lupa Password?</a>
       </div>
 
-      <button type="submit" class="btn btn-danger w-100 mt-4">Login</button>
+      <button type="submit" class="btn btn-dark w-100 mt-4">Login</button>
 
       @if(session()->has('loginError'))
         <div class="alert alert-danger mt-3 text-center p-2">
