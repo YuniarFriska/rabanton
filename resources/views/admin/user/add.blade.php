@@ -12,7 +12,7 @@
                 @endif
                 @csrf
                 <div class="form-group">
-                    <label for="">Username</label>
+                    <label for="">Nama Pengguna</label>
                     <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" placeholder="Username" value="{{ isset($user) ? $user->name : old('name') }}">
                     @error('name')
                         <div class="invalid-feedback">
@@ -32,7 +32,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="">Password</label>
+                    <label for="">Kata Sandi</label>
                     <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" placeholder="Password" value="{{ old('password') }}">
                     @error('password')
                         <div class="invalid-feedback">
@@ -42,7 +42,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="">Confirmation Password</label>
+                    <label for="">Konfirmasi Kata Sandi</label>
                     <input type="password" name="re_password" class="form-control @error('re_password') is-invalid @enderror" placeholder="Password">
                     @error('re_password')
                         <div class="invalid-feedback">
@@ -51,7 +51,7 @@
                     @enderror
                 </div>
 
-                <button type="submit" class="btn btn-primary">Save</button>
+                <button type="submit" class="btn btn-primary">Simpan</button>
             </form>
             </div>
         </div>
