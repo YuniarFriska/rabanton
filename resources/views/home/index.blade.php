@@ -280,7 +280,7 @@
           @endforeach
       </div>
   </div>
-</div>git
+</div>
 
  <div class="section testimonials py-16 bg-gray-50">
     <div class="container">
